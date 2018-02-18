@@ -63,6 +63,9 @@ http://stream.dubstep.fm:80/256mp3
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="http://channelpear.com/images/media/14060.jpg" group-title="24/7",Adult Swim Animation
 https://adultswim-vodlive.cdn.turner.com/live/daily_animated_1/stream.m3u8
 
+#EXTINF:-1,tvg-id="" tvg-name="" tvg-logo="" group-title="24/7",King of the Hill
+https://videoserver1.org/live/ATpzuotRfcUT8Fb0HdKJCQ/1518952863/fa46ec0b4924e8c2194a53ef61b94039.m3u8
+
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="http://channelpear.com/images/media/14061.jpg" group-title="24/7",Adult Swim Live Action
 https://adultswim-vodlive.cdn.turner.com/live/daily_liveaction_1/stream.m3u8
 
