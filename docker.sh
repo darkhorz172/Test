@@ -34,7 +34,7 @@ function update_script() {
   msg_ok "Base system updated"
 
   msg_info "Updating Docker Engine"
-  $STD apt-get install --only-upgrade -y docker-ce docker-ce-cli containerd.io=1.7.28-1~debian.12~bookworm
+  $STD apt-get install --only-upgrade -y docker-ce docker-ce-cli containerd.io
 
   msg_ok "Docker Engine updated"
 
@@ -50,6 +50,7 @@ function update_script() {
 
   if docker ps -a --format '{{.Names}}' | grep -q '^portainer$'; then
     msg_info "Updating Portainer"
+    $STD apt install containerd.io=1.7.28-1~debian.12~bookworm
     $STD docker pull portainer/portainer-ce:latest
     $STD docker stop portainer && docker rm portainer
     $STD docker volume create portainer_data >/dev/null 2>&1
